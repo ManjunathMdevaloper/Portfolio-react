@@ -1,8 +1,8 @@
-# 🌐 Raghav Katta — Personal Developer Portfolio
+# 🌐 Manjunath Manke — Personal Developer Portfolio
 
 This is my official developer portfolio website built using modern frontend tools like **React**, **Tailwind CSS**, and **Framer Motion**. It highlights my projects, skills, and contact details — a digital home for everything I do as a developer.
 
-> 🔴 Live at: [https://www.raghavkatta.xyz](https://www.raghavkatta.xyz)
+> 🔴 Live at:
 
 ---
 
@@ -21,7 +21,7 @@ This is my official developer portfolio website built using modern frontend tool
 ## 📁 Folder Structure
 
 ```bash
-RaghavKatta/
+ManjunathM/
 ├── .vscode/               # Editor configs
 ├── .vercel/               # Vercel deployment configs
 ├── dist/                  # Production build (auto-generated)
@@ -41,8 +41,8 @@ bash
 Copy
 Edit
 # Clone the repo
-git clone https://github.com/raghavxkatta/RaghavKatta.git
-cd RaghavKatta
+git clone https://github.com/ManjunathMdevaloper/Portfolio-reat.git
+cd ManjunathM
 
 # Install dependencies
 npm install
