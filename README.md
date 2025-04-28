@@ -41,7 +41,7 @@ bash
 Copy
 Edit
 # Clone the repo
-git clone https://github.com/ManjunathMdevaloper/Portfolio-reat.git
+git clone https://github.com/ManjunathMdevaloper/Portfolio-react.git
 cd ManjunathM
 
 # Install dependencies
