@@ -11,7 +11,6 @@ const projects = [
         subtitle: "using React JS and JSON Server",
         year: "2024",
         description: "Books Management System: Developed a ReactJS application to manage book records (add, view, edit, delete) with responsive UI, React Hooks for state management, and React Router for navigation.",
-        demo: "https://hackyours.raghavkatta.xyz",
         image: library,
         github: "https://github.com/ManjunathMdevaloper/ReactMainProject",
         tech: ["JSON Server", "React js", "CSS"],
@@ -141,7 +140,7 @@ export default function Projects() {
                                 whileHover={{ scale: 1.1 }}
                                 transition={{ duration: 0.3 }}
                                 className="w-full lg:w-[450px] aspect-video overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                                onClick={() => window.open(project.demo, '_blank')}
+                                // onClick={() => window.open(project.demo, '_blank')}
                             >
                                 <img
                                     src={project.image}

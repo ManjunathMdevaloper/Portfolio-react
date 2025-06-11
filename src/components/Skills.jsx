@@ -1,61 +1,28 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { SiHibernate, SiEclipseide, SiMysql, SiSpring, } from 'react-icons/si'; // Hibernate, Eclipse, Bootstrap
-import {DiJava, DiReact, DiVisualstudio} from 'react-icons/di';
+import {DiJava, DiPython, DiReact, DiVisualstudio} from 'react-icons/di';
 import { BiData } from 'react-icons/bi';
 import SnowParticles from './SnowParticle';
+import { FaCode } from 'react-icons/fa'; 
 const skills = [
-  { 
-    name: 'HTML', icon: <i className="devicon-html5-plain colored text-3xl sm:text-7xl" /> },
+  { name: 'Java', icon: <DiJava className="text-3xl sm:text-6xl text-[#ED8B00]" /> },
+  { name: 'Python', icon: <DiPython className="text-3xl sm:text-6xl text-[#3776AB]" /> },
+  { name: 'SQL', icon: <BiData className="text-3xl sm:text-6xl text-[#00758F]" /> },
+  { name: 'HTML', icon: <i className="devicon-html5-plain colored text-3xl sm:text-7xl" /> },
   { name: 'CSS', icon: <i className="devicon-css3-plain colored text-3xl sm:text-7xl" /> },
   { name: 'JavaScript', icon: <i className="devicon-javascript-plain colored text-3xl sm:text-7xl" /> },
   { name: 'Bootstrap', icon: <i className="devicon-bootstrap-plain colored text-3xl sm:text-7xl" /> },
-  {
-    name: 'React',
-    icon: <DiReact className="text-3xl sm:text-6xl text-[#61DAFB]" />,
-  },
-  {
-    name: 'Java',
-    icon: <DiJava className="text-3xl sm:text-6xl text-[#ED8B00]" />,
-  },
-  {
-    name: 'SQL',
-    icon: <BiData className="text-3xl sm:text-6xl text-[#00758F]" />,
-  },
-  {
-    name: 'MySQL',
-    icon: <SiMysql className="text-3xl sm:text-6xl text-[#00758F]" />,
-  },
-  {
-    name: 'Spring Boot',
-    icon: <SiSpring className="text-3xl sm:text-6xl text-[#6DB33F]" />, // You can use same icon for Boot too
-  },
-  {
-    name: 'GitHub',
-    icon: <i className="devicon-github-original colored text-3xl sm:text-7xl" />,
-  },
-  {
-    name: 'VS Code',
-    icon: <DiVisualstudio className="text-3xl sm:text-6xl text-[#007ACC]" />, // Official VS Code blue
-  },
-  {
-    name: 'Hibernate',
-    icon: <SiHibernate className="text-3xl sm:text-6xl text-[#59666C]" />, // Hibernate gray color
-  },
-  {
-    name: 'Eclipse',
-    icon: <SiEclipseide className="text-3xl sm:text-6xl text-[#2C2255]" />, // Eclipse dark blue
-  },
-  {
-    name: 'EditPlus',
-    icon: <DiVisualstudio className="text-3xl sm:text-6xl text-[#00ADEF]" />, // Similar blue icon (no EditPlus icon available)
-  },
-  {
-    name: 'Spring Tool Suite',
-    icon: <SiSpring className="text-3xl sm:text-6xl text-[#6DB33F]" />, // Use Spring icon again (STS is just Spring customized)
-  },
-
-  
+  { name: 'React', icon: <DiReact className="text-3xl sm:text-6xl text-[#61DAFB]" /> },
+  { name: 'MySQL', icon: <SiMysql className="text-3xl sm:text-6xl text-[#00758F]" /> },
+  { name: 'Spring Boot', icon: <SiSpring className="text-3xl sm:text-6xl text-[#6DB33F]" /> },
+  { name: 'GitHub', icon: <i className="devicon-github-original colored text-3xl sm:text-7xl" /> },
+  { name: 'VS Code', icon: <DiVisualstudio className="text-3xl sm:text-6xl text-[#007ACC]" /> },
+  { name: 'Hibernate', icon: <SiHibernate className="text-3xl sm:text-6xl text-[#59666C]" /> },
+  { name: 'Eclipse', icon: <SiEclipseide className="text-3xl sm:text-6xl text-[#2C2255]" /> },
+  { name: 'EditPlus', icon: <DiVisualstudio className="text-3xl sm:text-6xl text-[#00ADEF]" /> },
+  { name: 'Spring Tool Suite', icon: <SiSpring className="text-3xl sm:text-6xl text-[#6DB33F]" /> },
+  { name: 'DSA', icon: <FaCode className="text-3xl sm:text-6xl text-[#FF6F61]" /> },
 ];
 
 export default function Skills() {
