@@ -39,6 +39,8 @@ function Hero() {
                         sequence={[
                             'Full Stack Developer',
                             2000,
+                            'Test Engineer',
+                            2000,
                             'React JS Developer',
                             2000,
                             'Problem Solver',
