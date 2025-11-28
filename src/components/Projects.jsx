@@ -4,6 +4,7 @@ import sms from "../assets/sms.png";
 import cda from "../assets/cda.png";
 import library from "../assets/library management system.jpg";
 import ems from "../assets/ems.png";
+import flightAutomation from "../assets/flight-automation.jpg"; // Add your screenshot here!
 
 const projects = [
     {
@@ -15,6 +16,17 @@ const projects = [
         github: "https://github.com/ManjunathMdevaloper/ReactMainProject",
         tech: ["JSON Server", "React js", "CSS"],
         color: "#00FF00"
+    },
+    {
+        title: "Flight Ticket Booking Automation",
+        subtitle: "Automated Testing using Selenium WebDriver & TestNG",
+        year: "2025",
+        description: "Developed an end-to-end automation testing framework for a flight booking website (e.g., MakeMyTrip/Cleartrip). Automated user flows: search flights, select seats, fill passenger details, payment gateway simulation, and verification of booking confirmation. Used Page Object Model, Data-Driven Testing (Excel), and generated detailed HTML reports.",
+        image: flightAutomation, // ← Put your screenshot here
+        github: "https://github.com/ManjunathMdevaloper/printflighttickets", // Update with real link
+        // demo: "#",
+        tech: ["Selenium WebDriver", "Java", "TestNG", "Maven", "Extent Reports"],
+        color: "#FF6B35" // Vibrant orange – perfect for automation!
     },
     {
         title: "College Directory Application",

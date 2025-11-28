@@ -20,7 +20,7 @@ export default function Footer() {
                         href: "https://x.com/Mmanjun72323639?t=W7d9PunSlrkF0aDpE9xYzA&s=09"
                     }, {
                         icon: FaLinkedin,
-                        href: "https://www.linkedin.com/in/manjunath-manke-9656812b9"
+                        href: "https://linkedin.com/in/manke-manjunath-9656812b9"
                     }].map(({ icon: Icon, href }, i) => (
                         <motion.a
                             key={i}
