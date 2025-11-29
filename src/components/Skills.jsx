@@ -1,28 +1,46 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { SiHibernate, SiEclipseide, SiMysql, SiSpring, } from 'react-icons/si'; // Hibernate, Eclipse, Bootstrap
-import {DiJava, DiPython, DiReact, DiVisualstudio} from 'react-icons/di';
-import { BiData } from 'react-icons/bi';
 import SnowParticles from './SnowParticle';
-import { FaCode } from 'react-icons/fa'; 
+
+// ── Correct react-icons imports (copy-paste this) ──────────────────────
+import { DiJava, DiPython, DiReact, DiVisualstudio } from 'react-icons/di';
+import {
+  SiSpringboot,      // ← correct name (lowercase "b")
+  SiHibernate,
+  SiMysql,
+  SiEclipseide,
+  SiSelenium,
+  SiPostman,
+  SiGithub,
+} from 'react-icons/si';
+
+import { TbRobot } from 'react-icons/tb';
+import { MdOutlinePlaylistAddCheckCircle } from 'react-icons/md';
+import { BiData } from 'react-icons/bi';
+
+// Font Awesome icons (cleaner than devicon classes)
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaBootstrap, FaGithub } from 'react-icons/fa';
+// ─────────────────────────────────────────────────────────────────────── 
 const skills = [
-  { name: 'Java', icon: <DiJava className="text-3xl sm:text-6xl text-[#ED8B00]" /> },
-  { name: 'Python', icon: <DiPython className="text-3xl sm:text-6xl text-[#3776AB]" /> },
-  { name: 'SQL', icon: <BiData className="text-3xl sm:text-6xl text-[#00758F]" /> },
-  { name: 'HTML', icon: <i className="devicon-html5-plain colored text-3xl sm:text-7xl" /> },
-  { name: 'CSS', icon: <i className="devicon-css3-plain colored text-3xl sm:text-7xl" /> },
-  { name: 'JavaScript', icon: <i className="devicon-javascript-plain colored text-3xl sm:text-7xl" /> },
-  { name: 'Bootstrap', icon: <i className="devicon-bootstrap-plain colored text-3xl sm:text-7xl" /> },
-  { name: 'React', icon: <DiReact className="text-3xl sm:text-6xl text-[#61DAFB]" /> },
-  { name: 'MySQL', icon: <SiMysql className="text-3xl sm:text-6xl text-[#00758F]" /> },
-  { name: 'Spring Boot', icon: <SiSpring className="text-3xl sm:text-6xl text-[#6DB33F]" /> },
-  { name: 'GitHub', icon: <i className="devicon-github-original colored text-3xl sm:text-7xl" /> },
-  { name: 'VS Code', icon: <DiVisualstudio className="text-3xl sm:text-6xl text-[#007ACC]" /> },
-  { name: 'Hibernate', icon: <SiHibernate className="text-3xl sm:text-6xl text-[#59666C]" /> },
-  { name: 'Eclipse', icon: <SiEclipseide className="text-3xl sm:text-6xl text-[#2C2255]" /> },
-  { name: 'EditPlus', icon: <DiVisualstudio className="text-3xl sm:text-6xl text-[#00ADEF]" /> },
-  { name: 'Spring Tool Suite', icon: <SiSpring className="text-3xl sm:text-6xl text-[#6DB33F]" /> },
-  { name: 'DSA', icon: <FaCode className="text-3xl sm:text-6xl text-[#FF6F61]" /> },
+  { name: 'Java',          icon: <DiJava className="text-3xl sm:text-6xl text-[#ED8B00]" /> },
+  { name: 'SQL',           icon: <BiData className="text-3xl sm:text-6xl text-[#00758F]" /> },
+  { name: 'Selenium',      icon: <SiSelenium className="text-3xl sm:text-6xl text-[#43B02A]" /> },
+  { name: 'Automation Testing', icon: <TbRobot className="text-3xl sm:text-6xl text-[#FF6B6B]" /> },
+  { name: 'Manual Testing',     icon: <MdOutlinePlaylistAddCheckCircle className="text-3xl sm:text-6xl text-[#4ECDC4]" /> },
+  { name: 'TestNG',        icon: <SiPostman className="text-3xl sm:text-6xl text-[#E33332]" /> }, // placeholder (no official TestNG icon)
+  { name: 'Postman',       icon: <SiPostman className="text-3xl sm:text-6xl text-[#FF6C37]" /> },
+  { name: 'HTML',          icon: <FaHtml5 className="text-3xl sm:text-6xl text-[#E34F26]" /> },
+  { name: 'CSS',           icon: <FaCss3Alt className="text-3xl sm:text-6xl text-[#1572B6]" /> },
+  { name: 'JavaScript',    icon: <FaJsSquare className="text-3xl sm:text-6xl text-[#F7DF1E]" /> },
+  { name: 'Bootstrap',     icon: <FaBootstrap className="text-3xl sm:text-6xl text-[#7952B3]" /> },
+  { name: 'React',         icon: <DiReact className="text-3xl sm:text-6xl text-[#61DAFB]" /> },
+  { name: 'MySQL',         icon: <SiMysql className="text-3xl sm:text-6xl text-[#00758F]" /> },
+  { name: 'Spring Boot',   icon: <SiSpringboot className="text-3xl sm:text-6xl text-[#6DB33F]" /> },
+  { name: 'Hibernate',     icon: <SiHibernate className="text-3xl sm:text-6xl text-[#59666C]" /> },
+  { name: 'GitHub',        icon: <SiGithub className="text-3xl sm:text-6xl" /> },
+  { name: 'VS Code',       icon: <DiVisualstudio className="text-3xl sm:text-6xl text-[#007ACC]" /> },
+  { name: 'Eclipse',       icon: <SiEclipseide className="text-3xl sm:text-6xl text-[#2C2255]" /> },
+  { name: 'Python',        icon: <DiPython className="text-3xl sm:text-6xl text-[#3776AB]" /> },
 ];
 
 export default function Skills() {

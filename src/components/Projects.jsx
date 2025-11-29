@@ -17,6 +17,17 @@ const projects = [
         color: "#00FF00"
     },
     {
+        title: "Flight Ticket Booking Automation",
+        subtitle: "Automated Testing using Selenium WebDriver & TestNG",
+        year: "2025",
+        description: "Developed an end-to-end automation testing framework for a flight booking website (e.g., MakeMyTrip/Cleartrip). Automated user flows: search flights, select seats, fill passenger details, payment gateway simulation, and verification of booking confirmation. Used Page Object Model, Data-Driven Testing (Excel), and generated detailed HTML reports.",
+        image: flightAutomation, // ← Put your screenshot here
+        github: "https://github.com/ManjunathMdevaloper/Flight-Booking-Automation-Selenium", // Update with real link
+        demo: "#",
+        tech: ["Selenium WebDriver", "Java", "TestNG", "Maven", "Extent Reports"],
+        color: "#FF6B35" // Vibrant orange – perfect for automation!
+    },
+    {
         title: "College Directory Application",
         subtitle: "using Spring boot and MYSQL ",
         year: "2025",
