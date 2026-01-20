@@ -2,7 +2,6 @@
 
 This is my official developer portfolio website built using modern frontend tools like **React**, **Tailwind CSS**, and **Framer Motion**. It highlights my projects, skills, and contact details — a digital home for everything I do as a developer.
 
-
 ---
 
 ## 🚀 Tech Stack
@@ -40,7 +39,7 @@ bash
 Copy
 Edit
 # Clone the repo
-git clone https://github.com/raghavxkatta/MankeManjunath.git
+git clone https://github.com/raghavxkatta/RaghavKatta.git
 cd MankeManjunath
 
 # Install dependencies
