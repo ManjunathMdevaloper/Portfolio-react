@@ -75,7 +75,7 @@ const projects = [
             "XLSX",
             "jsPDF"
         ],
-        color: "#7C4DFF"
+        color: "#2de9feff"
     }
 ];
 
