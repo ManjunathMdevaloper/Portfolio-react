@@ -3,6 +3,7 @@ import { useRef, useEffect } from "react";
 import hero from "../assets/hero.jpg";
 import { TypeAnimation } from 'react-type-animation';
 import { IoIosArrowDown } from "react-icons/io";
+import MagneticButton from "./MagneticButton";
 
 function Hero() {
     const containerRef = useRef(null);
@@ -39,6 +40,8 @@ function Hero() {
                         sequence={[
                             'Full Stack Developer',
                             2000,
+                            'Test Engineer',
+                            2000,
                             'React JS Developer',
                             2000,
                             'Problem Solver',
@@ -58,32 +61,25 @@ function Hero() {
                 >
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
                         Hello!, I&apos;m <br />
-                        <span className="gradient-text-hero pulse-glow">Manke Manjunath</span>
+                        <span className="gradient-text-hero pulse-glow glitch" data-text="Manke Manjunath">Manke Manjunath</span>
                     </h1>
 
                     <p className="text-lg md:text-xl text-white/90 max-w-2xl mb-6">
-                        Specializing in building modern web applications with React, Spring Boot, and MYSQL.
-                        Passionate about creating seamless user experiences and scalable backend solutions.
+                        Specializing in Front-end & Back-end development with React & Spring Boot, and ensuring software quality through Manual & Automation Testing with Selenium.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <motion.a
+                        <MagneticButton
                             href="#About1"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="bg-gradient-to-r from-[#00c6ff] to-[#0072ff] text-white font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-cyan-500/50 transition-all"
-
+                            className="bg-gradient-to-r from-[#00c6ff] to-[#0072ff] text-white font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-cyan-500/50 transition-all inline-block"
                         >
                             Contact Me
-                        </motion.a>
-                        <motion.a
+                        </MagneticButton>
+                        <MagneticButton
                             href="#Projects"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="backdrop-blur-md bg-white/10 border border-white/20 text-white font-semibold px-8 py-3 rounded-lg hover:bg-white/20 transition-all"
-
+                            className="backdrop-blur-md bg-white/10 border border-white/20 text-white font-semibold px-8 py-3 rounded-lg hover:bg-white/20 transition-all inline-block"
                         >
                             View Work
-                        </motion.a>
+                        </MagneticButton>
                     </div>
                 </motion.div>
             </div>
@@ -108,7 +104,7 @@ function Hero() {
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="w-64 sm:w-72 md:w-80 lg:w-96 rounded-full relative z-10 glass-card hover-lift h-150"
+                    className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] lg:w-[450px] lg:h-[450px] rounded-full object-cover relative z-10 hover-lift shadow-2xl border-4 border-white/10"
                 />
             </motion.div>
 

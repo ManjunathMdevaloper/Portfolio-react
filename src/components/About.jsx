@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { useRef, useState } from "react";
 import SnowParticles from "./SnowParticle";
 import ContactTerminal from "./ContactTerminal";
+import { Reveal } from "./Reveal";
+
 export default function About() {
   const formRef = useRef(null);
   const [showToast, setShowToast] = useState(false);
@@ -30,14 +32,14 @@ export default function About() {
       <SnowParticles />
       <div className="relative  max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Bot Column */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
           className="w-full h-[400px] sm:h-[500px] md:h-[550px] lg:h-[600px] flex items-center justify-center"
         >
           <iframe
-          id="spline-iframe"
+            id="spline-iframe"
             src="https://my.spline.design/happyrobotbutton-z223TCHWkFzxAoGzpR0Xgs7B/"
             frameBorder="0"
             allow="autoplay; fullscreen"
@@ -56,28 +58,32 @@ export default function About() {
           transition={{ duration: 0.8 }}
           className="glass-card border border-[#2C74B3]/30 rounded-2xl p-8 shadow-2xl backdrop-blur-lg bg-black/40"
         >
-          <motion.h2
-            className="text-4xl font-extrabold mb-6 bg-gradient-to-r from-[#00c6ff] to-[#2C74B3] text-transparent bg-clip-text"
-            animate={{ opacity: [0.5, 1, 0.5] }}
-            transition={{ duration: 3, repeat: Infinity }}
-          >
-            👋 About Me
-          </motion.h2>
+          <Reveal>
+            <motion.h2
+              className="text-4xl font-extrabold mb-6 bg-gradient-to-r from-[#00c6ff] to-[#2C74B3] text-transparent bg-clip-text"
+              animate={{ opacity: [0.5, 1, 0.5] }}
+              transition={{ duration: 3, repeat: Infinity }}
+            >
+              👋 About Me
+            </motion.h2>
+          </Reveal>
 
-          <p className="text-white/90 text-lg leading-relaxed mb-4">
-            I'm{" "}
-            <span className="text-[#5f9acf] pulse-glow font-semibold">Manke Manjunath</span>,
-            a modern-day digital alchemist who thrives on turning complex ideas
-            into scalable, elegant solutions using <strong>Java</strong>,{" "}
-            <strong>Spring</strong>, <strong>React</strong>, and{" "}
-            <strong>Spring Boot</strong>.
-          </p>
-          <p className="text-white/80 mb-6">
-            🚀 Constantly iterating. Always shipping. Passionate about elegant
-            design, clean code, and pushing boundaries.
-          </p>
+          <Reveal>
+            <p className="text-white/90 text-lg leading-relaxed mb-4">
+              I'm{" "}
+              <span className="text-[#5f9acf] pulse-glow font-semibold">Manke Manjunath</span>,
+              a versatile developer focused on creating seamless web applications and ensuring their quality.
+              My expertise spans <strong>Front-end </strong> development with <strong>React</strong>, <strong>Back-end</strong> architecture using <strong>Java Spring Boot</strong>,
+              and comprehensive <strong>Testing</strong> strategies including <strong>Manual</strong> and <strong>Automation</strong> with <strong>Java Selenium</strong>.
+            </p>
+          </Reveal>
+          <Reveal>
+            <p className="text-white/80 mb-6">
+              🚀 Dedicated to delivering high-quality software by combining development expertise with rigorous testing strategies.
+            </p>
+          </Reveal>
 
-        <hr className="my-6 border-[#2C74B3]/20" />
+          <hr className="my-6 border-[#2C74B3]/20" />
 
           <h2 className="text-2xl font-bold text-white mb-4">📬 Contact Me</h2>
 
@@ -94,7 +100,7 @@ export default function About() {
             )}
           </AnimatePresence>
 
-          <ContactTerminal/>
+          <ContactTerminal />
         </motion.div>
       </div>
     </section>

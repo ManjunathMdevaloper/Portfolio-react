@@ -63,7 +63,7 @@ export default function ContactTerminal() {
       {/* Title */}
       <p className="text-green-400 mb-6 text-lg flex items-center gap-2">
         <span className="animate-pulse text-green-400">$</span>
-        <span className="typewriter">Let's make this commit count.</span>
+        <span className="typewriter glitch" data-text="Let's make this commit count.">Let's make this commit count.</span>
       </p>
 
       {/* Contact Form */}
