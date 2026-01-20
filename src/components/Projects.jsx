@@ -17,6 +17,16 @@ const projects = [
         color: "#00FF00"
     },
     {
+        title: "MakeMyTrip Flight Booking Automation",
+        subtitle: "Round-Trip Automation using Selenium",
+        year: "2025",
+        description: "Automated the complete round-trip flight booking flow (Pune ↔ Hyderabad) on MakeMyTrip.com. Covered flight search, filters, passenger details, and payment page navigation. Implemented Page Object Model with explicit waits using XPath and CSS selectors. Executed 45+ positive, negative, and data-driven test cases using Excel. Generated TestNG HTML reports with screenshots on failure, reducing manual regression time from 4 hours to approximately 18 minutes.",
+        image: mmt, // replace with your actual image variable
+        github: "https://github.com/ManjunathMdevaloper/printflighttickets", // add GitHub repo link if available
+        tech: ["Selenium WebDriver", "Java", "TestNG", "Maven", "Excel", "POM"],
+        color: "#1E88E5"
+    },
+    {
         title: "College Directory Application",
         subtitle: "using Spring boot and MYSQL ",
         year: "2025",
