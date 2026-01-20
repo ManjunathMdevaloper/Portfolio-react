@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import sms from "../assets/sms.png";
-import cda from "../assets/cda.png";
+import cda from "../assets/cda1.png";
 import library from "../assets/library management system.jpg";
 import ems from "../assets/ems.png";
 
