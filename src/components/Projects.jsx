@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import sms from "../assets/sms.png";
-import cda from "../assets/cda1.png";
+import cda from "../assets/cda.png";
 import library from "../assets/library management system.jpg";
 import ems from "../assets/ems.png";
 
@@ -15,16 +15,6 @@ const projects = [
         github: "https://github.com/ManjunathMdevaloper/ReactMainProject",
         tech: ["JSON Server", "React js", "CSS"],
         color: "#00FF00"
-    },
-    {
-        title: "MakeMyTrip Flight Booking Automation",
-        subtitle: "Round-Trip Automation using Selenium",
-        year: "2025",
-        description: "Automated the complete round-trip flight booking flow (Pune ↔ Hyderabad) on MakeMyTrip.com. Covered flight search, filters, passenger details, and payment page navigation. Implemented Page Object Model with explicit waits using XPath and CSS selectors. Executed 45+ positive, negative, and data-driven test cases using Excel. Generated TestNG HTML reports with screenshots on failure, reducing manual regression time from 4 hours to approximately 18 minutes.",
-        image: mmt, // replace with your actual image variable
-        github: "https://github.com/ManjunathMdevaloper/printflighttickets", // add GitHub repo link if available
-        tech: ["Selenium WebDriver", "Java", "TestNG", "Maven", "Excel", "POM"],
-        color: "#1E88E5"
     },
     {
         title: "College Directory Application",
